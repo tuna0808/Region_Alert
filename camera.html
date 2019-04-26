@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Svg.draw.js : Demo-Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="demo.css">
+
+    <title>Svg.draw.js | Demo-Page</title>
+
+  </head>
+
+
+  <body>
+
+
+
+    <div id="info" style="display:none"> </div>
+    <div id="loading"> Loading the model... </div>
+
+
+
+    <div id="main" style="display:none">
+
+        <video id="video" playsinline="" style="-webkit-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        display: none;
+        ">
+        </video></div>
+
+
+
+
+<div id="polygonGridOnCtrl"></div>
+<div id="cameraCamera">
+  <canvas id="output"></canvas>
+</div>
+
+
+
+<footer>
+  <div id="Alert" style="font-size: 180%; color: blue; float: right;"></div>
+  <div id="zahyou" style="color: black; float: right;">
+    x=
+    <span id="x_zahyou">0</span><br>
+    y=
+    <span id="y_zahyou">0</span><br>
+    ankle_x=
+    <span id="ankle_x_zahyou">0</span><br>
+    ankle_y=
+    <span id="ankle_y_zahyou">0</span><br>
+    array_x=
+    <span id="array_x_zahyou">0</span><br>
+    array_y=
+    <span id="array_y_zahyou">0</span><br>
+    inside_bool=
+    <span id="inside_bool">None</span><br>
+    poses_length
+    <span id="poses_length">0</span><br>
+
+
+
+
+
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+    <script src="camera.js"></script>
+    <script src="svg.min.js"></script>
+    <script src="svg.draw.min.js"></script>
+
+    <script>
+    var poly3 = new SVG('polygonGridOnCtrl').polygon().draw().attr('stroke-width',1).attr('fill',"rgba(0,100,255, 0.5)");
+    poly3.on('drawstart', function(e){
+    });
+
+    </script>
+<!-- document.addEventListener('keydown', function(e){
+    if(e.keyCode == 13){
+        poly3.draw('done');
+        poly3.off('drawstart');
+    }
+    if(e.keyCode == 17){
+        poly3.draw('param', 'snapToGrid', 20);
+    }
+});
+
+document.addEventListener('keyup', function(e){
+    poly3.draw('param', 'snapToGrid', 1);
+
+});
+
+
+array_x.sort(function(a,b){return a - b;});
+array_y.sort(function(a,b){return a - b;});
+
+
+i
+
+
+-->
+
+
+
+  </body>
+</html>
