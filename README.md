@@ -17,6 +17,9 @@ Overview
 - iphone(Safari version12.0)
 - Mac(Chrome version74.0.3729.169)
 
+## License
+[MIT](https://github.com/tuna0808/Region_Alert/blob/master/LICENSE)
+
 ## Author
 
 [Natsu](https://github.com/tuna0808)
