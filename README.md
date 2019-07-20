@@ -8,6 +8,7 @@ Overview
 - 骨格検出された人物の足元が,指定した領域に含まれるかどうかによってアラートが作動します.
 - 骨格検出には[Posenet](https://github.com/tensorflow/tfjs-models/tree/master/posenet)を利用しています.
 - モバイル端末からのアクセスが可能です.
+- アップロードファイルのコードはコンパイル後のものです.
 
 ## Demo
 - [こちら](https://tuna0808.github.io/Region_Alert/camera.html)からデモを利用できます.
