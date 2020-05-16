@@ -60916,7 +60916,7 @@ function detectPoseInRealTime(video, net) {
 
 async function bindPage() {
   // Load the PoseNet model weights with architecture 0.75
-  const net = await posenet.load(0.75);
+  const net = await posenet.load(0.5);
   document.getElementById('loading').style.display = 'none';
   document.getElementById('main').style.display = 'block';
   let video;
